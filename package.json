@@ -1,0 +1,30 @@
+{
+  "name": "deepmq",
+  "version": "1.0.0",
+  "description": "A minimal AMQP 0-9-1 message broker",
+  "main": "dist/src/index.js",
+  "bin": {
+    "deepmq": "./dist/src/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "tsc --watch",
+    "test": "node --test dist/tests/**/*.test.js",
+    "cli": "node dist/src/cli/index.js"
+  },
+  "keywords": [
+    "amqp",
+    "message-broker",
+    "message-queue",
+    "rabbitmq"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.0",
+    "@types/node": "^20.0.0",
+    "amqplib": "^0.10.0",
+    "typescript": "^5.3.0"
+  }
+}
